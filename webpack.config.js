@@ -1,10 +1,18 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
     entry: './src/js/main.js',
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Cathing',
+        }),
+    ],
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        filename: '[name].[contenthash].js',
+        path: path.resolve(__dirname, 'dist'),
+        clean: true,
     },
     devServer: {
         static: path.resolve(__dirname, 'dist'),
