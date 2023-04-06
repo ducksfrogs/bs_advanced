@@ -4,11 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/js/main.js',
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Cathing',
-        }),
-    ],
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
@@ -19,6 +14,9 @@ module.exports = {
         port: 8080,
         hot: true
     },
+    plugins: [
+        new HtmlWebpackPlugin({ template: './src/index.html'})
+    ],
     module: {
         rules: [
             {
