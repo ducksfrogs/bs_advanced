@@ -7,9 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Hello Bootstrap</h1>
-        <button class="btn btn-primary">Primary button</button>
-    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand"> Portforio</a>
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navBar"
+                    aria-controls="navbar-content"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBar" >
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portforio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
