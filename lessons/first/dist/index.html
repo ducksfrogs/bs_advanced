@@ -7,23 +7,31 @@
     <title>Bootstrap w/ webpack</title>
 </head>
 <body>
-    <h1>Some company</h1>
-    <h2>Some company</h2>
-    <ul>
-        <li>dummy</li>
-        <li>dummy</li>
-        <li>dummy</li>
-        <li>dummy</li>
-        <li>dummy</li>
-        <li>dummy</li>
-    </ul>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur assu</p>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Hello, Bootstrap and Webpack!</h1>
-        <button class="btn btn-primary">Primary button</button>
-        dd
+   <!-- navbar  -->
+   <nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom small blur-filter">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">LOGO here</a>
+        <button class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-content"
+                aria-expanded="false"
+                aria-label="toggle Navigation">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav ne-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    <a href="#" class="nav-link" >About</a>
+                    <a href="#" class="nav-link" >Courses</a>
+                    <a href="#" class="nav-link" >FAQ</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    
+   </nav>
+   <!-- navbar  -->
     <script src="./main.js"></script>
 </body>
 </html>
