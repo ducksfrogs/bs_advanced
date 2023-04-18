@@ -15,14 +15,11 @@ module.exports = {
         rules: [
             {
                 test: /\.(scss)$/,
-                use: [
-                    {
+                use: [{
                         loader: 'style-loader'
-                    },
-                    {
+                    },{
                         loader: 'css-loader'
-                    },
-                    {
+                    },{
                         loader: 'postcss-loader',
                         options: {
                             postcssOptions: {
@@ -31,11 +28,9 @@ module.exports = {
                                 ]
                             }
                         }
-                    },
-                    {
+                    },{
                         loader: 'sass-loader'
-                    }
-                ]
+                    }]
             }
         ]
 
