@@ -1,38 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap w/ webpack</title>
 </head>
-<body>
-   <!-- navbar  -->
-   <nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom small blur-filter">
-    <div class="container">
-        <a href="index.html" class="navbar-brand">LOGO here</a>
-        <button class="navbar-toggler border-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbar-content"
-                aria-expanded="false"
-                aria-label="toggle Navigation">
-            <span class="navbar-toggler-icon"> </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-content">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
-                </li>    
-                <a href="#" class="nav-link" >About</a>
-                    <a href="#" class="nav-link" >Courses</a>
-                    <a href="#" class="nav-link" >FAQ</a>
 
-            </ul>
+<body class="bg-light pt-5">
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom small blur-filter">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">LOGO here</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-content" aria-expanded="false" aria-label="toggle Navigation">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                </ul>
+                <div class="ms-auto me-1 d-grid d-md-block gap-2 mb-2 mb-md-0">
+                    <a href="#" class="btn btn-sm btn-warning align-items-center d-inline-flex text-center">sing up for mm</a>
+                    <a href="#" class="btn btn-sm btn-danger">login</a>
+                </div>
+                <form action="#" class="d-flex" role="search">
+                    <input type="search" class="form-controll-sm" placeholder="serchr for">
+                    <button class="btn btn-sm btn-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="16" 
+                            height="16" 
+                            fill="currentColor" 
+                            class="bi bi-search" 
+                            viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
-    </div>
-   </nav>
-   <!-- navbar  -->
+    </nav>
+    <!-- navbar  -->
+    <!-- home Banner -->
+    <header class="min-header py-5 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="home-header-text-holder pe-md-5">
+                        <h1 class="fs-3 font-weight-normal">Lorem, ipsum dolor sit amet consectetuoloremque. Sequi eligend</h1>
+                        <h2 class="fs-5 fw-light text-secondary">Lorem ipsum dol eos dolores cumndis sed voluptas providet fugiat, suscipit en</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- home Banner -->
     <script src="./main.js"></script>
 </body>
+
 </html>
