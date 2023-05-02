@@ -7,6 +7,7 @@ import img1 from '../img/img1_half.jpg';
 
 
 const testImg = document.createElement('img');
+testImg.classList.add('card-img-top');
 testImg.src = img1;
-document.getElementById('img1').appendChild(testImg);
+document.getElementById('card').appendChild(testImg);
 
