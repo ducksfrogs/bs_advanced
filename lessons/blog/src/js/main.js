@@ -10,9 +10,9 @@ import loopI from '../img/img4.jpg';
 const testImg = document.createElement('img');
 testImg.classList.add('card-img-top');
 testImg.src = img1;
-document.getElementsByClassName('card').appendChild(testImg);
+document.getElementsById('card').appendChild(testImg);
 
-const loopImg = document.createElement('img');
+const loopImg = new Image(); 
 loopImg.src = loopI;
 document.getElementById('unsp').appendChild(loopImg);
 
