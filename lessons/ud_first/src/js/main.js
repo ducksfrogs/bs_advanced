@@ -9,5 +9,6 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import heroImg from '../img/img2.jpg';
 
 const heroI = document.createElement('img');
+heroI.classList.add('img-fluid');
 heroI.src = heroImg;
 document.getElementById('HeroImg').appendChild(heroI);
