@@ -18,7 +18,10 @@ module.exports = {
                 use: [{
                         loader: 'style-loader'
                     },{
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        options: {
+                            url: true,
+                        },
                     },{
                         loader: 'postcss-loader',
                         options: {
@@ -30,7 +33,15 @@ module.exports = {
                         }
                     },{
                         loader: 'sass-loader'
-                    }]
+                    },],
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
             }
         ]
 
