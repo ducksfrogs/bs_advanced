@@ -12,7 +12,7 @@ testImg.classList.add('card-img-top');
 testImg.src = img1;
 document.getElementsById('card').appendChild(testImg);
 
-const loopImg = new Image(); 
+const loopImg = document.createElement('img');
 loopImg.src = loopI;
 document.getElementById('unsp').appendChild(loopImg);
 
